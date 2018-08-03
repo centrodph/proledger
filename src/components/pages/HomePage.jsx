@@ -35,7 +35,9 @@ export class HomePage extends Component {
                   </div>
                 </div>
                 <div className="col-sm-12  col-md-5">
-                  <SignInForm />
+                  <div className="home-sign-in-form">
+                    <SignInForm />
+                  </div>
                 </div>
               </div>
             </div>

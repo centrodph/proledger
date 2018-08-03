@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 import { PAGE_TITLE } from '../../utils/Constants';
 import logo from '../../assets/images/logo.png';
+import { CButton } from '../form/elements';
 
 export class Header extends Component {
-  renderHeaderActions = () => <div className="component-header-actions">test</div>;
+  renderHeaderActions = () => (
+    <div className="component-header-actions">
+      <a href="#" className="component-header-actions__link">
+        News & Blog
+      </a>
+      <a href="#" className="component-header-actions__link">
+        Help
+      </a>
+      <a href="#" className="component-header-actions__link">
+        Pricing
+      </a>
+      <CButton type="button" className="component-header-actions__btn">
+        <span>SIGN-UP</span>
+      </CButton>
+    </div>
+  );
   render() {
     return (
       <div className="component-header">

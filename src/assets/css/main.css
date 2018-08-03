@@ -1055,18 +1055,18 @@ strong {
   font-weight: normal;
   font-style: normal; }
 
-.stencil-bold, .component-welcome .welcome-subtitle, .component-page-homepage .home-title {
+.stencil-bold, .component-page-homepage .home-title {
   font-family: "butler_stencilbold"; }
 
-.stencil-light, .component-welcome .welcome-title {
+.stencil-light {
   font-family: "butler_stencillight"; }
 
-.roboto, .component-signin-form, .component-signin-form .component-input-row .textfield-input, .component-signin-form .form-actions .forgot-link, .component-signin-form .component-c-button button, .component-chat-message, .component-search-contacts, .component-user-card .user-card-content .user-card-content-usermessage, .component-user-card .bag-unread, .component-page-homepage .btn-request-invite button {
+.roboto, .component-header-actions__link, .component-header-actions__btn, .component-signin-form, .component-signin-form .component-input-row .textfield-input, .component-signin-form .form-actions .forgot-link, .component-signin-form .component-c-button button, .component-page-homepage .btn-request-invite button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400; }
 
-.roboto-md, .component-signin-form .form-title, .component-chat-message__name, .component-chat-toolbar, .component-chat-toolbar-contener__title, .component-user-card .user-card-content .user-card-content-name {
+.roboto-md, .component-signin-form .form-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500; }
@@ -1119,7 +1119,10 @@ a:hover {
   padding: 20px;
   border-bottom: solid 1px rgba(0, 0, 0, 0.04);
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background: #fff;
+  position: relative;
+  z-index: 1; }
   .component-header h1 {
     margin: 0; }
   .component-header #logo {
@@ -1128,9 +1131,41 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex: 1;
-    justify-content: flex-end; }
-    .component-header .component-header-actions .component-header-btn {
-      margin-left: 20px; }
+    justify-content: flex-end;
+    font-size: 12px; }
+
+.component-header-actions__link {
+  display: inline-flex;
+  border: none;
+  height: 22px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+  background: #fff;
+  color: #000;
+  margin-right: 34px; }
+  .component-header-actions__link:hover {
+    color: #333333; }
+
+.component-header-actions__btn {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  display: inline-flex;
+  border: none;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  height: 22px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 12px;
+  cursor: pointer; }
+  .component-header-actions__btn:hover {
+    background: #333333; }
+  .component-header-actions__btn button {
+    color: #fff; }
 
 .component-google-signin button {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
@@ -1161,7 +1196,8 @@ a:hover {
 
 .component-signin-form {
   max-width: 400px;
-  min-height: 400px; }
+  min-height: 400px;
+  flex: 1; }
   .component-signin-form .form-title {
     font-size: 30px;
     line-height: 1.5;
@@ -1192,19 +1228,18 @@ a:hover {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
+    display: inline-flex;
     border: none;
     background: #000;
     color: #fff;
     text-transform: uppercase;
-    cursor: pointer;
-    width: 72px;
+    height: 22px;
+    padding-left: 28px;
+    padding-right: 28px;
     font-size: 12px;
-    line-height: 19px;
-    height: 21px; }
+    cursor: pointer; }
     .component-signin-form .component-c-button button:hover {
       background: #333333; }
-    .component-signin-form .component-c-button button .flaticon {
-      margin-left: 5px; }
   .component-signin-form .google-signin {
     border-top: solid 1px #b0bec5;
     padding: 30px 0; }
@@ -1298,294 +1333,6 @@ a:hover {
   .component-header-btn:hover {
     transform: translate(0, -2px); }
 
-.component-chat-header {
-  display: flex;
-  height: 40px;
-  align-items: center;
-  border-bottom: solid 1px rgba(69, 90, 100, 0.7);
-  margin-bottom: 10px; }
-  .component-chat-header .user-chat-header {
-    padding: 0px 12px 0px 0px;
-    -webkit-transition: transform 0.2s ease-out;
-    -moz-transition: transform 0.2s ease-out;
-    -o-transition: transform 0.2s ease-out;
-    transition: transform 0.2s ease-out; }
-    .component-chat-header .user-chat-header:hover {
-      background: none; }
-    .component-chat-header .user-chat-header:hover {
-      transform: translate(0, -2px); }
-
-.component-chat-message {
-  padding-bottom: 12px;
-  color: #8899a6;
-  line-height: 1.2; }
-
-.component-chat-message__date {
-  line-height: 1.4;
-  font-size: 11px;
-  border-bottom: solid 1px #eceff1; }
-
-.component-chat-message__name {
-  font-size: 10px;
-  padding-bottom: 6px; }
-
-.component-chat-message-row {
-  display: flex;
-  flex-direction: row; }
-  .component-chat-message-row .component-chat-message-row__text {
-    font-size: 11px;
-    color: black;
-    flex: 1; }
-  .component-chat-message-row .component-chat-message-row__date {
-    font-size: 10px;
-    color: #cfd8dc;
-    width: 70px;
-    padding: 0 10px 0 0px;
-    text-align: right; }
-
-.component-chat-message-input {
-  height: 60px;
-  background: rgba(136, 153, 166, 0.1);
-  position: relative;
-  display: flex; }
-  .component-chat-message-input .component-chat-message-input__textbox {
-    flex: 8; }
-  .component-chat-message-input .component-chat-message-input__actions {
-    flex: 2; }
-
-.component-chat-message-input__textbox .component-input-textarea {
-  padding: 5px;
-  margin: 0;
-  height: 100%; }
-  .component-chat-message-input__textbox .component-input-textarea .textarea-input {
-    border: none;
-    background: none;
-    max-height: 100%;
-    font-size: 12px;
-    resize: none;
-    outline: none; }
-    .component-chat-message-input__textbox .component-input-textarea .textarea-input:focus {
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      -ms-box-shadow: none;
-      -o-box-shadow: none;
-      box-shadow: none; }
-
-.component-chat-message-input__actions {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px; }
-  .component-chat-message-input__actions .component-c-button {
-    -webkit-transition: transform 0.2s ease-out;
-    -moz-transition: transform 0.2s ease-out;
-    -o-transition: transform 0.2s ease-out;
-    transition: transform 0.2s ease-out; }
-    .component-chat-message-input__actions .component-c-button:hover {
-      transform: translate(0, -2px); }
-
-.component-chat {
-  display: flex;
-  height: 100%; }
-
-.component-chat__main {
-  flex: 9;
-  padding: 0 20px; }
-
-.component-chat__sidebar {
-  flex: 3;
-  padding: 0 20px; }
-
-.component-chat-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
-
-.component-chat-body__messagelist {
-  padding: 3px;
-  overflow-y: auto;
-  flex: 1; }
-
-.component-chat-header {
-  display: flex;
-  height: 40px;
-  align-items: center;
-  border-bottom: solid 1px rgba(69, 90, 100, 0.7);
-  margin-bottom: 10px; }
-  .component-chat-header .user-chat-header {
-    padding: 0px 12px 0px 0px;
-    -webkit-transition: transform 0.2s ease-out;
-    -moz-transition: transform 0.2s ease-out;
-    -o-transition: transform 0.2s ease-out;
-    transition: transform 0.2s ease-out; }
-    .component-chat-header .user-chat-header:hover {
-      background: none; }
-    .component-chat-header .user-chat-header:hover {
-      transform: translate(0, -2px); }
-
-.component-chat-toolbar-contener__title {
-  display: flex;
-  height: 40px;
-  align-items: center;
-  border-bottom: solid 1px rgba(69, 90, 100, 0.7);
-  margin-bottom: 10px;
-  font-size: 13px; }
-
-.component-chat-toolbar-contener__tools {
-  font-size: 11px; }
-  .component-chat-toolbar-contener__tools .component-chat-toolbar-contener__tools_btn {
-    padding: 8px 0; }
-    .component-chat-toolbar-contener__tools .component-chat-toolbar-contener__tools_btn i {
-      padding-right: 10px;
-      font-size: 14px; }
-
-.component-search-contacts {
-  padding: 10px 50px 10px 30px; }
-  .component-search-contacts ::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #cfd8dc;
-    line-height: 20px; }
-  .component-search-contacts ::-moz-placeholder {
-    font-size: 13px;
-    color: #cfd8dc;
-    line-height: 20px; }
-  .component-search-contacts :-ms-input-placeholder {
-    font-size: 13px;
-    color: #cfd8dc;
-    line-height: 20px; }
-  .component-search-contacts :-moz-placeholder {
-    font-size: 13px;
-    color: #cfd8dc;
-    line-height: 20px; }
-  .component-search-contacts .component-input-textfield {
-    position: relative;
-    margin: 0; }
-    .component-search-contacts .component-input-textfield:before {
-      font-family: Flaticon2;
-      content: "\f123";
-      display: block;
-      position: absolute;
-      left: 8px;
-      top: 6px; }
-  .component-search-contacts input {
-    padding-left: 30px;
-    border: none; }
-    .component-search-contacts input.form-control:focus {
-      -webkit-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-      -moz-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-      -ms-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-      -o-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-      box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-      border-color: #cfd8dc; }
-
-.component-user-card {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  padding: 10px 50px 10px 30px;
-  display: flex;
-  position: relative; }
-  .component-user-card .user-card-content {
-    padding-left: 7px; }
-    .component-user-card .user-card-content .user-card-content-name {
-      font-size: 10px; }
-    .component-user-card .user-card-content .user-card-content-usermessage {
-      font-size: 9px;
-      color: #78909c; }
-  .component-user-card .bag-unread {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    background: #546e7a;
-    line-height: 18px;
-    color: #fff;
-    font-size: 9px;
-    height: 18px;
-    width: 18px;
-    position: absolute;
-    top: 10px;
-    right: 30px; }
-  .component-user-card .component-user-card-options {
-    position: absolute;
-    top: 10px;
-    right: 30px; }
-  .component-user-card:hover {
-    cursor: pointer;
-    background: rgba(176, 190, 197, 0.1); }
-
-.component-user-card-image {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  max-width: 30px;
-  max-height: 30px;
-  position: relative; }
-  .component-user-card-image img {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    border: solid 1px #546e7a; }
-  .component-user-card-image .component-user-status {
-    position: absolute;
-    right: -3px;
-    bottom: 2px; }
-
-.component-user-card-options .user-card-options-button button {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: none;
-  border: none;
-  color: #78909c;
-  cursor: pointer; }
-  .component-user-card-options .user-card-options-button button:hover {
-    background: rgba(207, 216, 220, 0.1); }
-  .component-user-card-options .user-card-options-button button:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-    -moz-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-    -ms-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-    -o-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-    box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
-    border-color: #cfd8dc;
-    outline: none; }
-
-.component-user-status .component-user-status-icon {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  border: solid 1px #90a4ae;
-  background: #fff;
-  display: block; }
-  .component-user-status .component-user-status-icon.status--busy {
-    background: #e95343; }
-  .component-user-status .component-user-status-icon.status--iddle {
-    background: #ffc000; }
-  .component-user-status .component-user-status-icon.status--online {
-    background: #10cf9b; }
-
-.component-welcome {
-  min-height: 100%;
-  background: rgba(255, 0, 0, 0.1);
-  justify-content: center;
-  background: url("../images/bg-welcome.png");
-  background-repeat: no-repeat;
-  background-position: 70% 50%; }
-  .component-welcome .welcome-content {
-    max-width: 450px; }
-  .component-welcome .welcome-title {
-    font-size: 32px;
-    line-height: 110%;
-    padding-top: 40px; }
-  .component-welcome .welcome-subtitle {
-    font-size: 32px;
-    line-height: 110%;
-    padding-top: 40px; }
-
 .component-page-homepage {
   display: flex;
   flex: 1;
@@ -1609,10 +1356,15 @@ a:hover {
       -moz-border-radius: 20px;
       -webkit-border-radius: 20px;
       border-radius: 20px;
+      display: inline-flex;
       border: none;
       background: #000;
       color: #fff;
       text-transform: uppercase;
+      height: 22px;
+      padding-left: 28px;
+      padding-right: 28px;
+      font-size: 12px;
       cursor: pointer;
       height: 36px;
       line-height: 20px;
@@ -1622,22 +1374,7 @@ a:hover {
       .component-page-homepage .btn-request-invite button:hover {
         background: #333333; }
 
-.component-convvers {
+.home-sign-in-form {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-  height: 100vh; }
-  .component-convvers .convvers-layout {
-    display: flex;
-    flex: 1; }
-  .component-convvers .convvers-content {
-    flex: 1; }
-    .component-convvers .convvers-content .d-flex {
-      min-height: 100%; }
-  .component-convvers .component-convvers-sidebar {
-    max-height: 100%;
-    display: flex;
-    flex-direction: column; }
-    .component-convvers .component-convvers-sidebar .sidebar-bottom {
-      flex: 1;
-      overflow: scroll; }
+  justify-content: flex-end;
+  width: 100%; }

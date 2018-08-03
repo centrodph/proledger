@@ -2,6 +2,7 @@
   @extend .roboto;
   max-width: 400px;
   min-height: 400px;
+  flex: 1;
 
   .form-title {
     @extend .roboto-md;
@@ -40,13 +41,6 @@
   .component-c-button {
     button {
       @include simpleBlackBtn();
-      width: 72px;
-      font-size: 12px;
-      line-height: 19px;
-      height: 21px;
-      .flaticon {
-        margin-left: 5px;
-      }
     }
   }
 

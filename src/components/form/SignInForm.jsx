@@ -60,7 +60,6 @@ export class SignInForm extends Component {
             <CButton type="submit" className="btn-login">
               <span>
                 Login
-                <span className="flaticon flaticon-065-right-arrow-1" />
               </span>
             </CButton>
           </div>

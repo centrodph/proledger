@@ -3,7 +3,9 @@
   border-bottom: solid 1px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: row;
-
+  background: #fff;
+  position: relative;
+  z-index: 1;
   h1 {
     margin: 0;
   }
@@ -15,9 +17,18 @@
     flex-direction: row;
     flex: 1;
     justify-content: flex-end;
+    font-size: 12px;
+  }
+}
 
-    .component-header-btn {
-      margin-left: 20px;
-    }
+.component-header-actions__link {
+  @include simpleWhiteBtn();
+  margin-right: 34px;
+}
+
+.component-header-actions__btn {
+  @include simpleBlackBtn();
+  button {
+    color: #fff;
   }
 }
