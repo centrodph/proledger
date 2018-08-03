@@ -1,0 +1,1643 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 700; }
+
+#root {
+  display: flex;
+  flex: 1;
+  height: 100vh; }
+
+.component-app {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  flex-direction: column; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #cfd8dc; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cfd8dc; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #cfd8dc; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cfd8dc; }
+
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 20/02/2018 10:59
+    */
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../font/Flaticon.eot");
+  src: url("../font/Flaticon.eot?#iefix") format("embedded-opentype"), url("../font/Flaticon.woff") format("woff"), url("../font/Flaticon.ttf") format("truetype"), url("../font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../font/Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+.flaticon-001-monitor:before {
+  content: "\f100"; }
+
+.flaticon-002-smile-1:before {
+  content: "\f101"; }
+
+.flaticon-003-diamond:before {
+  content: "\f102"; }
+
+.flaticon-004-bar-chart:before {
+  content: "\f103"; }
+
+.flaticon-005-wifi:before {
+  content: "\f104"; }
+
+.flaticon-006-key:before {
+  content: "\f105"; }
+
+.flaticon-007-equalizer:before {
+  content: "\f106"; }
+
+.flaticon-008-credit-card:before {
+  content: "\f107"; }
+
+.flaticon-009-share:before {
+  content: "\f108"; }
+
+.flaticon-010-loading:before {
+  content: "\f109"; }
+
+.flaticon-011-instagram:before {
+  content: "\f10a"; }
+
+.flaticon-012-link:before {
+  content: "\f10b"; }
+
+.flaticon-013-broken-link:before {
+  content: "\f10c"; }
+
+.flaticon-014-smile:before {
+  content: "\f10d"; }
+
+.flaticon-015-crop:before {
+  content: "\f10e"; }
+
+.flaticon-016-sad:before {
+  content: "\f10f"; }
+
+.flaticon-017-cursor:before {
+  content: "\f110"; }
+
+.flaticon-018-remove-user:before {
+  content: "\f111"; }
+
+.flaticon-019-add-user:before {
+  content: "\f112"; }
+
+.flaticon-020-pause:before {
+  content: "\f113"; }
+
+.flaticon-021-stop:before {
+  content: "\f114"; }
+
+.flaticon-022-play:before {
+  content: "\f115"; }
+
+.flaticon-023-move:before {
+  content: "\f116"; }
+
+.flaticon-024-video:before {
+  content: "\f117"; }
+
+.flaticon-025-rewind:before {
+  content: "\f118"; }
+
+.flaticon-026-cloud-computing-1:before {
+  content: "\f119"; }
+
+.flaticon-027-cloud-computing:before {
+  content: "\f11a"; }
+
+.flaticon-028-user-1:before {
+  content: "\f11b"; }
+
+.flaticon-029-star:before {
+  content: "\f11c"; }
+
+.flaticon-030-facebook:before {
+  content: "\f11d"; }
+
+.flaticon-031-cloud:before {
+  content: "\f11e"; }
+
+.flaticon-032-briefcase:before {
+  content: "\f11f"; }
+
+.flaticon-033-fast-forward:before {
+  content: "\f120"; }
+
+.flaticon-034-cancel:before {
+  content: "\f121"; }
+
+.flaticon-035-shield:before {
+  content: "\f122"; }
+
+.flaticon-036-calculator:before {
+  content: "\f123"; }
+
+.flaticon-037-photo-camera:before {
+  content: "\f124"; }
+
+.flaticon-038-cut-1:before {
+  content: "\f125"; }
+
+.flaticon-039-shuffle:before {
+  content: "\f126"; }
+
+.flaticon-040-compass:before {
+  content: "\f127"; }
+
+.flaticon-041-folder:before {
+  content: "\f128"; }
+
+.flaticon-042-minus:before {
+  content: "\f129"; }
+
+.flaticon-043-plus:before {
+  content: "\f12a"; }
+
+.flaticon-044-file:before {
+  content: "\f12b"; }
+
+.flaticon-045-align-right:before {
+  content: "\f12c"; }
+
+.flaticon-046-expand:before {
+  content: "\f12d"; }
+
+.flaticon-047-earth-grid:before {
+  content: "\f12e"; }
+
+.flaticon-048-justify:before {
+  content: "\f12f"; }
+
+.flaticon-049-copy:before {
+  content: "\f130"; }
+
+.flaticon-050-tag:before {
+  content: "\f131"; }
+
+.flaticon-051-minimize:before {
+  content: "\f132"; }
+
+.flaticon-052-switch-1:before {
+  content: "\f133"; }
+
+.flaticon-053-heart:before {
+  content: "\f134"; }
+
+.flaticon-054-clip:before {
+  content: "\f135"; }
+
+.flaticon-055-cube:before {
+  content: "\f136"; }
+
+.flaticon-056-information:before {
+  content: "\f137"; }
+
+.flaticon-057-eye:before {
+  content: "\f138"; }
+
+.flaticon-058-hide:before {
+  content: "\f139"; }
+
+.flaticon-059-log-out:before {
+  content: "\f13a"; }
+
+.flaticon-060-align-left:before {
+  content: "\f13b"; }
+
+.flaticon-061-puzzle:before {
+  content: "\f13c"; }
+
+.flaticon-062-switch:before {
+  content: "\f13d"; }
+
+.flaticon-063-picture:before {
+  content: "\f13e"; }
+
+.flaticon-064-pin-1:before {
+  content: "\f13f"; }
+
+.flaticon-065-right-arrow-1:before {
+  content: "\f140"; }
+
+.flaticon-066-refresh:before {
+  content: "\f141"; }
+
+.flaticon-067-filter:before {
+  content: "\f142"; }
+
+.flaticon-068-pencil:before {
+  content: "\f143"; }
+
+.flaticon-069-log-in:before {
+  content: "\f144"; }
+
+.flaticon-070-reply-all:before {
+  content: "\f145"; }
+
+.flaticon-071-reply:before {
+  content: "\f146"; }
+
+.flaticon-072-silence:before {
+  content: "\f147"; }
+
+.flaticon-073-settings:before {
+  content: "\f148"; }
+
+.flaticon-074-email-2:before {
+  content: "\f149"; }
+
+.flaticon-075-left-arrow-2:before {
+  content: "\f14a"; }
+
+.flaticon-076-email-1:before {
+  content: "\f14b"; }
+
+.flaticon-077-menu-1:before {
+  content: "\f14c"; }
+
+.flaticon-078-left-arrow-1:before {
+  content: "\f14d"; }
+
+.flaticon-079-right-arrow:before {
+  content: "\f14e"; }
+
+.flaticon-080-down-arrow-2:before {
+  content: "\f14f"; }
+
+.flaticon-081-up-arrow-2:before {
+  content: "\f150"; }
+
+.flaticon-082-alarm-1:before {
+  content: "\f151"; }
+
+.flaticon-083-chevron:before {
+  content: "\f152"; }
+
+.flaticon-084-firefox:before {
+  content: "\f153"; }
+
+.flaticon-085-disabled:before {
+  content: "\f154"; }
+
+.flaticon-086-qr-code:before {
+  content: "\f155"; }
+
+.flaticon-087-cut:before {
+  content: "\f156"; }
+
+.flaticon-088-tools:before {
+  content: "\f157"; }
+
+.flaticon-089-piggy-bank:before {
+  content: "\f158"; }
+
+.flaticon-090-binoculars:before {
+  content: "\f159"; }
+
+.flaticon-091-shopping-cart:before {
+  content: "\f15a"; }
+
+.flaticon-092-money:before {
+  content: "\f15b"; }
+
+.flaticon-093-down-arrow-1:before {
+  content: "\f15c"; }
+
+.flaticon-094-thermometer:before {
+  content: "\f15d"; }
+
+.flaticon-095-umbrella:before {
+  content: "\f15e"; }
+
+.flaticon-096-dashboard:before {
+  content: "\f15f"; }
+
+.flaticon-097-pin:before {
+  content: "\f160"; }
+
+.flaticon-098-megaphone:before {
+  content: "\f161"; }
+
+.flaticon-099-youtube:before {
+  content: "\f162"; }
+
+.flaticon-100-wind:before {
+  content: "\f163"; }
+
+.flaticon-101-safari:before {
+  content: "\f164"; }
+
+.flaticon-102-chrome:before {
+  content: "\f165"; }
+
+.flaticon-103-headphones:before {
+  content: "\f166"; }
+
+.flaticon-104-down-arrow:before {
+  content: "\f167"; }
+
+.flaticon-105-twitter:before {
+  content: "\f168"; }
+
+.flaticon-106-target:before {
+  content: "\f169"; }
+
+.flaticon-107-leaf:before {
+  content: "\f16a"; }
+
+.flaticon-108-highlighter:before {
+  content: "\f16b"; }
+
+.flaticon-109-smartphone:before {
+  content: "\f16c"; }
+
+.flaticon-110-screenshot:before {
+  content: "\f16d"; }
+
+.flaticon-111-power-button:before {
+  content: "\f16e"; }
+
+.flaticon-112-question:before {
+  content: "\f16f"; }
+
+.flaticon-113-push-pin:before {
+  content: "\f170"; }
+
+.flaticon-114-flag:before {
+  content: "\f171"; }
+
+.flaticon-115-left-arrow:before {
+  content: "\f172"; }
+
+.flaticon-116-moon:before {
+  content: "\f173"; }
+
+.flaticon-117-video-camera:before {
+  content: "\f174"; }
+
+.flaticon-118-music:before {
+  content: "\f175"; }
+
+.flaticon-119-printer:before {
+  content: "\f176"; }
+
+.flaticon-120-diskette:before {
+  content: "\f177"; }
+
+.flaticon-121-paste:before {
+  content: "\f178"; }
+
+.flaticon-122-mute-1:before {
+  content: "\f179"; }
+
+.flaticon-123-paint-bucket:before {
+  content: "\f17a"; }
+
+.flaticon-124-clicker:before {
+  content: "\f17b"; }
+
+.flaticon-125-dislike:before {
+  content: "\f17c"; }
+
+.flaticon-126-up-arrow-1:before {
+  content: "\f17d"; }
+
+.flaticon-127-like:before {
+  content: "\f17e"; }
+
+.flaticon-128-straight:before {
+  content: "\f17f"; }
+
+.flaticon-129-joke:before {
+  content: "\f180"; }
+
+.flaticon-130-surprise:before {
+  content: "\f181"; }
+
+.flaticon-131-scale:before {
+  content: "\f182"; }
+
+.flaticon-132-trash-1:before {
+  content: "\f183"; }
+
+.flaticon-133-trash:before {
+  content: "\f184"; }
+
+.flaticon-134-phone-call-2:before {
+  content: "\f185"; }
+
+.flaticon-135-phone-call-1:before {
+  content: "\f186"; }
+
+.flaticon-136-phone-call:before {
+  content: "\f187"; }
+
+.flaticon-137-eraser:before {
+  content: "\f188"; }
+
+.flaticon-138-thunderbolt:before {
+  content: "\f189"; }
+
+.flaticon-139-snowflake:before {
+  content: "\f18a"; }
+
+.flaticon-140-sun:before {
+  content: "\f18b"; }
+
+.flaticon-141-home:before {
+  content: "\f18c"; }
+
+.flaticon-142-microphone:before {
+  content: "\f18d"; }
+
+.flaticon-143-idea:before {
+  content: "\f18e"; }
+
+.flaticon-144-layout:before {
+  content: "\f18f"; }
+
+.flaticon-145-upload:before {
+  content: "\f190"; }
+
+.flaticon-146-download:before {
+  content: "\f191"; }
+
+.flaticon-147-medal:before {
+  content: "\f192"; }
+
+.flaticon-148-open-lock:before {
+  content: "\f193"; }
+
+.flaticon-149-diagram:before {
+  content: "\f194"; }
+
+.flaticon-150-pie-chart:before {
+  content: "\f195"; }
+
+.flaticon-151-check:before {
+  content: "\f196"; }
+
+.flaticon-152-followers:before {
+  content: "\f197"; }
+
+.flaticon-153-user:before {
+  content: "\f198"; }
+
+.flaticon-154-bookmark:before {
+  content: "\f199"; }
+
+.flaticon-155-usb:before {
+  content: "\f19a"; }
+
+.flaticon-156-mute:before {
+  content: "\f19b"; }
+
+.flaticon-157-volume:before {
+  content: "\f19c"; }
+
+.flaticon-158-bluetooth:before {
+  content: "\f19d"; }
+
+.flaticon-159-email:before {
+  content: "\f19e"; }
+
+.flaticon-160-chat:before {
+  content: "\f19f"; }
+
+.flaticon-161-alarm:before {
+  content: "\f1a0"; }
+
+.flaticon-162-edit:before {
+  content: "\f1a1"; }
+
+.flaticon-163-calendar:before {
+  content: "\f1a2"; }
+
+.flaticon-164-up-arrow:before {
+  content: "\f1a3"; }
+
+.flaticon-165-menu:before {
+  content: "\f1a4"; }
+
+.flaticon-166-hourglass:before {
+  content: "\f1a5"; }
+
+.flaticon-167-wall-clock:before {
+  content: "\f1a6"; }
+
+.flaticon-168-padlock:before {
+  content: "\f1a7"; }
+
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 16/06/2017 11:38
+  	*/
+@font-face {
+  font-family: "Flaticon2";
+  src: url("../font/Flaticon2.eot");
+  src: url("../font/Flaticon2.eot?#iefix") format("embedded-opentype"), url("../font/Flaticon2.woff") format("woff"), url("../font/Flaticon2.ttf") format("truetype"), url("../font/Flaticon2.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon2";
+    src: url("../font/Flaticon2.svg#Flaticon") format("svg"); } }
+
+[class^="flaticon2-"]:before,
+[class*=" flaticon2-"]:before,
+[class^="flaticon2-"]:after,
+[class*=" flaticon2-"]:after {
+  font-family: Flaticon2;
+  font-style: normal; }
+
+.flaticon2-001-zoom-out:before {
+  content: "\f100"; }
+
+.flaticon2-002-zoom-in:before {
+  content: "\f101"; }
+
+.flaticon2-003-thunderbolt:before {
+  content: "\f102"; }
+
+.flaticon2-004-close-2:before {
+  content: "\f103"; }
+
+.flaticon2-005-close-1:before {
+  content: "\f104"; }
+
+.flaticon2-006-close:before {
+  content: "\f105"; }
+
+.flaticon2-007-wind:before {
+  content: "\f106"; }
+
+.flaticon2-008-watch:before {
+  content: "\f107"; }
+
+.flaticon2-009-video-camera-1:before {
+  content: "\f108"; }
+
+.flaticon2-010-video-camera:before {
+  content: "\f109"; }
+
+.flaticon2-011-user-2:before {
+  content: "\f10a"; }
+
+.flaticon2-012-user-1:before {
+  content: "\f10b"; }
+
+.flaticon2-013-user:before {
+  content: "\f10c"; }
+
+.flaticon2-014-upload-2:before {
+  content: "\f10d"; }
+
+.flaticon2-015-upload-1:before {
+  content: "\f10e"; }
+
+.flaticon2-016-unlock:before {
+  content: "\f10f"; }
+
+.flaticon2-017-umbrella:before {
+  content: "\f110"; }
+
+.flaticon2-018-twitter:before {
+  content: "\f111"; }
+
+.flaticon2-019-triangle:before {
+  content: "\f112"; }
+
+.flaticon2-020-trash-1:before {
+  content: "\f113"; }
+
+.flaticon2-021-trash:before {
+  content: "\f114"; }
+
+.flaticon2-022-switch-1:before {
+  content: "\f115"; }
+
+.flaticon2-023-switch:before {
+  content: "\f116"; }
+
+.flaticon2-024-like:before {
+  content: "\f117"; }
+
+.flaticon2-025-dislike:before {
+  content: "\f118"; }
+
+.flaticon2-026-thermometer:before {
+  content: "\f119"; }
+
+.flaticon2-027-target:before {
+  content: "\f11a"; }
+
+.flaticon2-028-tag:before {
+  content: "\f11b"; }
+
+.flaticon2-029-sunset:before {
+  content: "\f11c"; }
+
+.flaticon2-030-sunrise:before {
+  content: "\f11d"; }
+
+.flaticon2-031-sun:before {
+  content: "\f11e"; }
+
+.flaticon2-032-star:before {
+  content: "\f11f"; }
+
+.flaticon2-033-square:before {
+  content: "\f120"; }
+
+.flaticon2-034-prohibition:before {
+  content: "\f121"; }
+
+.flaticon2-035-share:before {
+  content: "\f122"; }
+
+.flaticon2-036-search:before {
+  content: "\f123"; }
+
+.flaticon2-037-scissors:before {
+  content: "\f124"; }
+
+.flaticon2-038-rotate-1:before {
+  content: "\f125"; }
+
+.flaticon2-039-rotate:before {
+  content: "\f126"; }
+
+.flaticon2-040-refresh-1:before {
+  content: "\f127"; }
+
+.flaticon2-041-refresh:before {
+  content: "\f128"; }
+
+.flaticon2-042-wifi:before {
+  content: "\f129"; }
+
+.flaticon2-043-printer:before {
+  content: "\f12a"; }
+
+.flaticon2-044-power-button:before {
+  content: "\f12b"; }
+
+.flaticon2-045-pocket:before {
+  content: "\f12c"; }
+
+.flaticon2-046-add-2:before {
+  content: "\f12d"; }
+
+.flaticon2-047-add-1:before {
+  content: "\f12e"; }
+
+.flaticon2-048-add:before {
+  content: "\f12f"; }
+
+.flaticon2-049-play:before {
+  content: "\f130"; }
+
+.flaticon2-050-pie-chart:before {
+  content: "\f131"; }
+
+.flaticon2-051-phone-call-6:before {
+  content: "\f132"; }
+
+.flaticon2-052-phone-call-5:before {
+  content: "\f133"; }
+
+.flaticon2-053-phone-call-4:before {
+  content: "\f134"; }
+
+.flaticon2-054-phone-call-3:before {
+  content: "\f135"; }
+
+.flaticon2-055-phone-call-2:before {
+  content: "\f136"; }
+
+.flaticon2-056-phone-call-1:before {
+  content: "\f137"; }
+
+.flaticon2-057-phone-call:before {
+  content: "\f138"; }
+
+.flaticon2-058-pause:before {
+  content: "\f139"; }
+
+.flaticon2-059-octagon:before {
+  content: "\f13a"; }
+
+.flaticon2-060-musical-note:before {
+  content: "\f13b"; }
+
+.flaticon2-061-move:before {
+  content: "\f13c"; }
+
+.flaticon2-062-moon:before {
+  content: "\f13d"; }
+
+.flaticon2-063-monitor-1:before {
+  content: "\f13e"; }
+
+.flaticon2-064-minus-2:before {
+  content: "\f13f"; }
+
+.flaticon2-065-minus-1:before {
+  content: "\f140"; }
+
+.flaticon2-066-minus:before {
+  content: "\f141"; }
+
+.flaticon2-067-minimize-1:before {
+  content: "\f142"; }
+
+.flaticon2-068-minimize:before {
+  content: "\f143"; }
+
+.flaticon2-069-voice-recording-1:before {
+  content: "\f144"; }
+
+.flaticon2-070-voice-recording:before {
+  content: "\f145"; }
+
+.flaticon2-071-menu:before {
+  content: "\f146"; }
+
+.flaticon2-072-maximize-1:before {
+  content: "\f147"; }
+
+.flaticon2-073-maximize:before {
+  content: "\f148"; }
+
+.flaticon2-074-map:before {
+  content: "\f149"; }
+
+.flaticon2-075-placeholder:before {
+  content: "\f14a"; }
+
+.flaticon2-076-email:before {
+  content: "\f14b"; }
+
+.flaticon2-077-padlock:before {
+  content: "\f14c"; }
+
+.flaticon2-078-loading:before {
+  content: "\f14d"; }
+
+.flaticon2-079-lifebuoy:before {
+  content: "\f14e"; }
+
+.flaticon2-080-layout:before {
+  content: "\f14f"; }
+
+.flaticon2-081-layers:before {
+  content: "\f150"; }
+
+.flaticon2-082-instagram:before {
+  content: "\f151"; }
+
+.flaticon2-083-info:before {
+  content: "\f152"; }
+
+.flaticon2-084-inbox:before {
+  content: "\f153"; }
+
+.flaticon2-085-image:before {
+  content: "\f154"; }
+
+.flaticon2-086-home:before {
+  content: "\f155"; }
+
+.flaticon2-087-heart:before {
+  content: "\f156"; }
+
+.flaticon2-088-headphones:before {
+  content: "\f157"; }
+
+.flaticon2-089-hash:before {
+  content: "\f158"; }
+
+.flaticon2-090-grid:before {
+  content: "\f159"; }
+
+.flaticon2-091-worldwide:before {
+  content: "\f15a"; }
+
+.flaticon2-092-folder:before {
+  content: "\f15b"; }
+
+.flaticon2-093-flag:before {
+  content: "\f15c"; }
+
+.flaticon2-094-filter:before {
+  content: "\f15d"; }
+
+.flaticon2-095-file:before {
+  content: "\f15e"; }
+
+.flaticon2-096-feather:before {
+  content: "\f15f"; }
+
+.flaticon2-097-facebook:before {
+  content: "\f160"; }
+
+.flaticon2-098-visualization:before {
+  content: "\f161"; }
+
+.flaticon2-099-hide:before {
+  content: "\f162"; }
+
+.flaticon2-100-external:before {
+  content: "\f163"; }
+
+.flaticon2-101-edit:before {
+  content: "\f164"; }
+
+.flaticon2-102-droplet:before {
+  content: "\f165"; }
+
+.flaticon2-103-download-1:before {
+  content: "\f166"; }
+
+.flaticon2-104-cloud-computing-1:before {
+  content: "\f167"; }
+
+.flaticon2-105-compact-disc:before {
+  content: "\f168"; }
+
+.flaticon2-106-delete:before {
+  content: "\f169"; }
+
+.flaticon2-107-cpu:before {
+  content: "\f16a"; }
+
+.flaticon2-108-chat-1:before {
+  content: "\f16b"; }
+
+.flaticon2-109-chat:before {
+  content: "\f16c"; }
+
+.flaticon2-110-command:before {
+  content: "\f16d"; }
+
+.flaticon2-111-settings:before {
+  content: "\f16e"; }
+
+.flaticon2-112-cloud:before {
+  content: "\f16f"; }
+
+.flaticon2-113-cloud-computing:before {
+  content: "\f170"; }
+
+.flaticon2-114-clock:before {
+  content: "\f171"; }
+
+.flaticon2-115-circle:before {
+  content: "\f172"; }
+
+.flaticon2-116-check-2:before {
+  content: "\f173"; }
+
+.flaticon2-117-check-1:before {
+  content: "\f174"; }
+
+.flaticon2-118-check:before {
+  content: "\f175"; }
+
+.flaticon2-119-photo-camera:before {
+  content: "\f176"; }
+
+.flaticon2-120-no-photo:before {
+  content: "\f177"; }
+
+.flaticon2-121-briefcase:before {
+  content: "\f178"; }
+
+.flaticon2-122-cube:before {
+  content: "\f179"; }
+
+.flaticon2-123-bookmark:before {
+  content: "\f17a"; }
+
+.flaticon2-124-bluetooth:before {
+  content: "\f17b"; }
+
+.flaticon2-125-bell-1:before {
+  content: "\f17c"; }
+
+.flaticon2-126-bell:before {
+  content: "\f17d"; }
+
+.flaticon2-127-battery:before {
+  content: "\f17e"; }
+
+.flaticon2-128-bar-chart-1:before {
+  content: "\f17f"; }
+
+.flaticon2-129-bar-chart:before {
+  content: "\f180"; }
+
+.flaticon2-130-medal:before {
+  content: "\f181"; }
+
+.flaticon2-131-at:before {
+  content: "\f182"; }
+
+.flaticon2-132-upload:before {
+  content: "\f183"; }
+
+.flaticon2-133-right-arrow:before {
+  content: "\f184"; }
+
+.flaticon2-134-left-arrow:before {
+  content: "\f185"; }
+
+.flaticon2-135-download:before {
+  content: "\f186"; }
+
+.flaticon2-136-shutter:before {
+  content: "\f187"; }
+
+.flaticon2-137-anchor:before {
+  content: "\f188"; }
+
+.flaticon2-138-right-alignment:before {
+  content: "\f189"; }
+
+.flaticon2-139-left-alignment:before {
+  content: "\f18a"; }
+
+.flaticon2-140-justify:before {
+  content: "\f18b"; }
+
+.flaticon2-141-center-align:before {
+  content: "\f18c"; }
+
+.flaticon2-142-warning-2:before {
+  content: "\f18d"; }
+
+.flaticon2-143-warning-1:before {
+  content: "\f18e"; }
+
+.flaticon2-144-warning:before {
+  content: "\f18f"; }
+
+.flaticon2-145-monitor:before {
+  content: "\f190"; }
+
+.flaticon2-146-sound-waves:before {
+  content: "\f191"; }
+
+@font-face {
+  font-family: "butler_stencilbold";
+  src: url(../font/butler_bold_stencil-webfont.woff2) format("woff2"), url(../font/butler_bold_stencil-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "butler_stencillight";
+  src: url(../font/butler_light_stencil-webfont.woff2) format("woff2"), url(../font/butler_light_stencil-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.stencil-bold, .component-welcome .welcome-subtitle, .component-page-homepage .home-title {
+  font-family: "butler_stencilbold"; }
+
+.stencil-light, .component-welcome .welcome-title {
+  font-family: "butler_stencillight"; }
+
+.roboto, .component-signin-form, .component-signin-form .component-input-row .textfield-input, .component-signin-form .form-actions .forgot-link, .component-signin-form .component-c-button button, .component-chat-message, .component-search-contacts, .component-user-card .user-card-content .user-card-content-usermessage, .component-user-card .bag-unread, .component-page-homepage .btn-request-invite button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.roboto-md, .component-signin-form .form-title, .component-chat-message__name, .component-chat-toolbar, .component-chat-toolbar-contener__title, .component-user-card .user-card-content .user-card-content-name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500; }
+
+.roboto-bold, .component-google-signin button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+a:hover {
+  text-decoration: none; }
+
+.component-c-button button {
+  cursor: pointer;
+  background: none;
+  border: none; }
+
+.component-footer {
+  padding: 20px;
+  font-size: 12px;
+  color: #8899a6; }
+  .component-footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .component-footer nav ul li {
+      display: inline-block;
+      margin-right: 5px; }
+      .component-footer nav ul li:after {
+        content: "•";
+        margin-left: 5px; }
+      .component-footer nav ul li:last-child:after {
+        content: ""; }
+      .component-footer nav ul li a {
+        color: #8899a6;
+        padding: 0 6px; }
+        .component-footer nav ul li a:hover {
+          color: #b4bfc7; }
+
+.component-header {
+  padding: 20px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: row; }
+  .component-header h1 {
+    margin: 0; }
+  .component-header #logo {
+    max-height: 26px; }
+  .component-header .component-header-actions {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end; }
+    .component-header .component-header-actions .component-header-btn {
+      margin-left: 20px; }
+
+.component-google-signin button {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 11px;
+  background: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  color: #757575; }
+  .component-google-signin button span {
+    margin-left: 5px;
+    line-height: 20px; }
+  .component-google-signin button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
+
+.component-signin-form {
+  max-width: 400px;
+  min-height: 400px; }
+  .component-signin-form .form-title {
+    font-size: 30px;
+    line-height: 1.5;
+    padding-bottom: 22px; }
+  .component-signin-form form {
+    padding-bottom: 30px; }
+  .component-signin-form .component-input-row {
+    padding-bottom: 20px; }
+    .component-signin-form .component-input-row .textfield-input {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      color: #8899a6;
+      font-size: 12px;
+      border: none;
+      background: #f5f8fa;
+      height: 36px; }
+  .component-signin-form .form-actions {
+    justify-content: space-between; }
+    .component-signin-form .form-actions .forgot-link {
+      color: #8899a6;
+      font-size: 12px;
+      line-height: 23px;
+      flex: 1; }
+      .component-signin-form .form-actions .forgot-link:hover {
+        color: #566672; }
+  .component-signin-form .component-c-button button {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 72px;
+    font-size: 12px;
+    line-height: 19px;
+    height: 21px; }
+    .component-signin-form .component-c-button button:hover {
+      background: #333333; }
+    .component-signin-form .component-c-button button .flaticon {
+      margin-left: 5px; }
+  .component-signin-form .google-signin {
+    border-top: solid 1px #b0bec5;
+    padding: 30px 0; }
+
+.cloading {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%; }
+
+.spinner {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px; }
+
+.spinner > div {
+  background-color: #263238;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out; }
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s; }
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s; }
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1); } }
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1); } }
+
+.component-add-contact-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background: #eceff1;
+  border: solid 1px #b0bec5;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out; }
+  .component-add-contact-btn:hover {
+    cursor: pointer;
+    background: rgba(17, 170, 206, 0.1); }
+  .component-add-contact-btn:hover {
+    transform: translate(0, -2px); }
+
+.component-header-btn {
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out; }
+  .component-header-btn:hover {
+    color: #117dce; }
+  .component-header-btn:hover {
+    transform: translate(0, -2px); }
+
+.component-chat-header {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: solid 1px rgba(69, 90, 100, 0.7);
+  margin-bottom: 10px; }
+  .component-chat-header .user-chat-header {
+    padding: 0px 12px 0px 0px;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+    .component-chat-header .user-chat-header:hover {
+      background: none; }
+    .component-chat-header .user-chat-header:hover {
+      transform: translate(0, -2px); }
+
+.component-chat-message {
+  padding-bottom: 12px;
+  color: #8899a6;
+  line-height: 1.2; }
+
+.component-chat-message__date {
+  line-height: 1.4;
+  font-size: 11px;
+  border-bottom: solid 1px #eceff1; }
+
+.component-chat-message__name {
+  font-size: 10px;
+  padding-bottom: 6px; }
+
+.component-chat-message-row {
+  display: flex;
+  flex-direction: row; }
+  .component-chat-message-row .component-chat-message-row__text {
+    font-size: 11px;
+    color: black;
+    flex: 1; }
+  .component-chat-message-row .component-chat-message-row__date {
+    font-size: 10px;
+    color: #cfd8dc;
+    width: 70px;
+    padding: 0 10px 0 0px;
+    text-align: right; }
+
+.component-chat-message-input {
+  height: 60px;
+  background: rgba(136, 153, 166, 0.1);
+  position: relative;
+  display: flex; }
+  .component-chat-message-input .component-chat-message-input__textbox {
+    flex: 8; }
+  .component-chat-message-input .component-chat-message-input__actions {
+    flex: 2; }
+
+.component-chat-message-input__textbox .component-input-textarea {
+  padding: 5px;
+  margin: 0;
+  height: 100%; }
+  .component-chat-message-input__textbox .component-input-textarea .textarea-input {
+    border: none;
+    background: none;
+    max-height: 100%;
+    font-size: 12px;
+    resize: none;
+    outline: none; }
+    .component-chat-message-input__textbox .component-input-textarea .textarea-input:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+      box-shadow: none; }
+
+.component-chat-message-input__actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px; }
+  .component-chat-message-input__actions .component-c-button {
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+    .component-chat-message-input__actions .component-c-button:hover {
+      transform: translate(0, -2px); }
+
+.component-chat {
+  display: flex;
+  height: 100%; }
+
+.component-chat__main {
+  flex: 9;
+  padding: 0 20px; }
+
+.component-chat__sidebar {
+  flex: 3;
+  padding: 0 20px; }
+
+.component-chat-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+.component-chat-body__messagelist {
+  padding: 3px;
+  overflow-y: auto;
+  flex: 1; }
+
+.component-chat-header {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: solid 1px rgba(69, 90, 100, 0.7);
+  margin-bottom: 10px; }
+  .component-chat-header .user-chat-header {
+    padding: 0px 12px 0px 0px;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+    .component-chat-header .user-chat-header:hover {
+      background: none; }
+    .component-chat-header .user-chat-header:hover {
+      transform: translate(0, -2px); }
+
+.component-chat-toolbar-contener__title {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: solid 1px rgba(69, 90, 100, 0.7);
+  margin-bottom: 10px;
+  font-size: 13px; }
+
+.component-chat-toolbar-contener__tools {
+  font-size: 11px; }
+  .component-chat-toolbar-contener__tools .component-chat-toolbar-contener__tools_btn {
+    padding: 8px 0; }
+    .component-chat-toolbar-contener__tools .component-chat-toolbar-contener__tools_btn i {
+      padding-right: 10px;
+      font-size: 14px; }
+
+.component-search-contacts {
+  padding: 10px 50px 10px 30px; }
+  .component-search-contacts ::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #cfd8dc;
+    line-height: 20px; }
+  .component-search-contacts ::-moz-placeholder {
+    font-size: 13px;
+    color: #cfd8dc;
+    line-height: 20px; }
+  .component-search-contacts :-ms-input-placeholder {
+    font-size: 13px;
+    color: #cfd8dc;
+    line-height: 20px; }
+  .component-search-contacts :-moz-placeholder {
+    font-size: 13px;
+    color: #cfd8dc;
+    line-height: 20px; }
+  .component-search-contacts .component-input-textfield {
+    position: relative;
+    margin: 0; }
+    .component-search-contacts .component-input-textfield:before {
+      font-family: Flaticon2;
+      content: "\f123";
+      display: block;
+      position: absolute;
+      left: 8px;
+      top: 6px; }
+  .component-search-contacts input {
+    padding-left: 30px;
+    border: none; }
+    .component-search-contacts input.form-control:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+      -moz-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+      -ms-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+      -o-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+      border-color: #cfd8dc; }
+
+.component-user-card {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 10px 50px 10px 30px;
+  display: flex;
+  position: relative; }
+  .component-user-card .user-card-content {
+    padding-left: 7px; }
+    .component-user-card .user-card-content .user-card-content-name {
+      font-size: 10px; }
+    .component-user-card .user-card-content .user-card-content-usermessage {
+      font-size: 9px;
+      color: #78909c; }
+  .component-user-card .bag-unread {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    background: #546e7a;
+    line-height: 18px;
+    color: #fff;
+    font-size: 9px;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 10px;
+    right: 30px; }
+  .component-user-card .component-user-card-options {
+    position: absolute;
+    top: 10px;
+    right: 30px; }
+  .component-user-card:hover {
+    cursor: pointer;
+    background: rgba(176, 190, 197, 0.1); }
+
+.component-user-card-image {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 30px;
+  max-height: 30px;
+  position: relative; }
+  .component-user-card-image img {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #546e7a; }
+  .component-user-card-image .component-user-status {
+    position: absolute;
+    right: -3px;
+    bottom: 2px; }
+
+.component-user-card-options .user-card-options-button button {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  color: #78909c;
+  cursor: pointer; }
+  .component-user-card-options .user-card-options-button button:hover {
+    background: rgba(207, 216, 220, 0.1); }
+  .component-user-card-options .user-card-options-button button:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+    -moz-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+    -ms-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+    -o-box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(207, 216, 220, 0.25);
+    border-color: #cfd8dc;
+    outline: none; }
+
+.component-user-status .component-user-status-icon {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #90a4ae;
+  background: #fff;
+  display: block; }
+  .component-user-status .component-user-status-icon.status--busy {
+    background: #e95343; }
+  .component-user-status .component-user-status-icon.status--iddle {
+    background: #ffc000; }
+  .component-user-status .component-user-status-icon.status--online {
+    background: #10cf9b; }
+
+.component-welcome {
+  min-height: 100%;
+  background: rgba(255, 0, 0, 0.1);
+  justify-content: center;
+  background: url("../images/bg-welcome.png");
+  background-repeat: no-repeat;
+  background-position: 70% 50%; }
+  .component-welcome .welcome-content {
+    max-width: 450px; }
+  .component-welcome .welcome-title {
+    font-size: 32px;
+    line-height: 110%;
+    padding-top: 40px; }
+  .component-welcome .welcome-subtitle {
+    font-size: 32px;
+    line-height: 110%;
+    padding-top: 40px; }
+
+.component-page-homepage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh; }
+  @media (max-width: 768px) {
+    .component-page-homepage {
+      height: auto; } }
+  .component-page-homepage .home-title {
+    font-size: 56px; }
+  .component-page-homepage .home-layout {
+    display: flex;
+    flex: 1;
+    align-items: center; }
+  .component-page-homepage .home-content {
+    flex: 1; }
+  .component-page-homepage .btn-request-invite {
+    padding-top: 50px;
+    padding-bottom: 20px; }
+    .component-page-homepage .btn-request-invite button {
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      border: none;
+      background: #000;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      height: 36px;
+      line-height: 20px;
+      padding: 8px 20px;
+      display: inline-flex;
+      font-size: 14px; }
+      .component-page-homepage .btn-request-invite button:hover {
+        background: #333333; }
+
+.component-convvers {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh; }
+  .component-convvers .convvers-layout {
+    display: flex;
+    flex: 1; }
+  .component-convvers .convvers-content {
+    flex: 1; }
+    .component-convvers .convvers-content .d-flex {
+      min-height: 100%; }
+  .component-convvers .component-convvers-sidebar {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column; }
+    .component-convvers .component-convvers-sidebar .sidebar-bottom {
+      flex: 1;
+      overflow: scroll; }

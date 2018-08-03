@@ -1,0 +1,36 @@
+.component-footer {
+  //@include primaryDarkBackground();
+  padding: 20px;
+  font-size: 12px;
+  color: $text-light-gray;
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: 5px;
+        &:after {
+          content: "•";
+          margin-left: 5px;
+        }
+        &:last-child {
+          &:after {
+            content: "";
+          }
+        }
+
+        a {
+          color: $text-light-gray;
+          padding: 0 6px;
+          &:hover {
+            color: lighten($text-light-gray, 15%);
+          }
+        }
+      }
+    }
+  }
+}

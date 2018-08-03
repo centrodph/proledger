@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@font-face {
+  font-family: "butler_stencilbold";
+  src: url(../font/butler_bold_stencil-webfont.woff2) format("woff2"),
+    url(../font/butler_bold_stencil-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "butler_stencillight";
+  src: url(../font/butler_light_stencil-webfont.woff2) format("woff2"),
+    url(../font/butler_light_stencil-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.stencil-bold {
+  font-family: "butler_stencilbold";
+}
+.stencil-light {
+  font-family: "butler_stencillight";
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-md {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin simpleBlackBtn() {
+  @include border-radius(20px);
+  @extend .roboto;
+  border: none;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background: lighten(#000000, 20%);
+  }
+}
+@mixin simpletext() {
+  color: $text-light-gray;
+  font-size: 12px;
+  @extend .roboto;
+}
+
+@mixin simpleShadow() {
+  @include box-shadow(0 0 0 0.2rem rgba($blue-gray-100, 0.25));
+}
+
+@mixin simpleHover() {
+  @include transition(transform 0.2s ease-out);
+  &:hover {
+    transform: translate(0, -2px);
+  }
+}
+
+@mixin centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin headerChatStructure {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: solid 1px rgba($blue-gray-700, 0.7);
+  margin-bottom: 10px;
+}
+
+// === Fonts === \\
+@mixin rounded-corner($radius-button) {
+  -moz-border-radius: $radius-button;
+  -webkit-border-radius: $radius-button;
+  border-radius: $radius-button;
+}
+
+@mixin border-radius($radius-button) {
+  -moz-border-radius: $radius-button;
+  -webkit-border-radius: $radius-button;
+  border-radius: $radius-button;
+}
+
+@mixin transition($transition: all 1s ease) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin google-font($font) {
+  $font: safe-unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: ($shadow);
+  -moz-box-shadow: ($shadow);
+  -ms-box-shadow: ($shadow);
+  -o-box-shadow: ($shadow);
+  box-shadow: ($shadow);
+}
+// text rendering
+@mixin text-rendering() {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// === Positioning === \\
+@mixin position($pos: absolute, $top: 0, $lft: 0, $wid: 100%, $hgt: 100%) {
+  position: $pos;
+  top: $top;
+  left: $lft;
+  width: $wid;
+  height: $hgt;
+  @content;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+// === Animations === \\
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}

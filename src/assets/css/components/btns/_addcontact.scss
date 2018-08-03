@@ -1,0 +1,16 @@
+.component-add-contact-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background: $blue-gray-50;
+  border: solid 1px $blue-gray-200;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba($hover-link-color, 0.1);
+  }
+
+  @include border-radius(50%);
+  @include centerFlex;
+  @include simpleHover();
+}

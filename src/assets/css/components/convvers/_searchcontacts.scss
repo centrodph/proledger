@@ -1,0 +1,47 @@
+.component-search-contacts {
+  @extend .roboto;
+  padding: 10px 50px 10px 30px;
+
+  ::-webkit-input-placeholder {
+    font-size: 13px;
+    color: $blue-gray-100;
+    line-height: 20px;
+  }
+  ::-moz-placeholder {
+    font-size: 13px;
+    color: $blue-gray-100;
+    line-height: 20px;
+  }
+  :-ms-input-placeholder {
+    font-size: 13px;
+    color: $blue-gray-100;
+    line-height: 20px;
+  }
+  :-moz-placeholder {
+    font-size: 13px;
+    color: $blue-gray-100;
+    line-height: 20px;
+  }
+
+  .component-input-textfield {
+    position: relative;
+    margin: 0;
+    &:before {
+      font-family: Flaticon2;
+      content: "\f123";
+      display: block;
+      position: absolute;
+      left: 8px;
+      top: 6px;
+    }
+  }
+
+  input {
+    padding-left: 30px;
+    border: none;
+    &.form-control:focus {
+      @include simpleShadow();
+      border-color: $blue-gray-100;
+    }
+  }
+}

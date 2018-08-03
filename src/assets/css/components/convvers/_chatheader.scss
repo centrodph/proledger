@@ -1,0 +1,13 @@
+.component-chat-header {
+  @include headerChatStructure();
+
+  .user-chat-header {
+    padding: 0px 12px 0px 0px;
+
+    &:hover {
+      background: none;
+    }
+
+    @include simpleHover();
+  }
+}

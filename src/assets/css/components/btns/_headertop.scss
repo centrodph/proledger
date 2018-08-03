@@ -1,0 +1,9 @@
+.component-header-btn {
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    color: $hover-link-color-2;
+  }
+
+  @include simpleHover();
+}

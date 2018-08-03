@@ -1,0 +1,32 @@
+.component-convvers {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+  .convvers-layout {
+    display: flex;
+    flex: 1;
+  }
+  .convvers-content {
+    // background: rgba(blue, 0.1); // FAKE COLOR
+    flex: 1;
+    .d-flex {
+      min-height: 100%;
+    }
+  }
+
+  .component-convvers-sidebar {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar-top {
+      // background: rgba(red, 0.1); // FAKE COLOR
+    }
+    .sidebar-bottom {
+      // background: rgba(yellow, 0.1); // FAKE COLOR
+      flex: 1;
+      overflow: scroll;
+    }
+  }
+}

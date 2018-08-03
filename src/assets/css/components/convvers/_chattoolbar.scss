@@ -1,0 +1,42 @@
+.component-chat-header {
+  @include headerChatStructure();
+
+  .user-chat-header {
+    padding: 0px 12px 0px 0px;
+
+    &:hover {
+      background: none;
+    }
+
+    @include simpleHover();
+  }
+}
+
+.component-chat-toolbar {
+  @extend .roboto-md;
+}
+.component-chat-toolbar-contener {
+}
+
+.component-chat-toolbar-contener__title {
+  @include headerChatStructure();
+  @extend .roboto-md;
+  font-size: 13px;
+}
+.component-chat-toolbar-contener__tools {
+  font-size: 11px;
+  .component-chat-toolbar-contener__tools_btn {
+    padding: 8px 0;
+    i {
+      padding-right: 10px;
+      font-size: 14px;
+
+      &.flaticon2-145-monitor {
+      }
+      &.flaticon-136-phone-call {
+      }
+      &.flaticon-117-video-camera {
+      }
+    }
+  }
+}

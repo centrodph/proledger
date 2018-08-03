@@ -1,0 +1,35 @@
+.component-chat-message {
+  padding-bottom: 12px;
+  color: $text-light-gray;
+  line-height: 1.2;
+  @extend .roboto;
+}
+
+.component-chat-message__date {
+  line-height: 1.4;
+  font-size: 11px;
+  border-bottom: solid 1px #eceff1;
+}
+.component-chat-message__name {
+  font-size: 10px;
+  padding-bottom: 6px;
+  @extend .roboto-md;
+}
+
+.component-chat-message-row {
+  display: flex;
+  flex-direction: row;
+
+  .component-chat-message-row__text {
+    font-size: 11px;
+    color: black;
+    flex: 1;
+  }
+  .component-chat-message-row__date {
+    font-size: 10px;
+    color: $blue-gray-100;
+    width: 70px;
+    padding: 0 10px 0 0px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,21 @@
+.component-user-card-options {
+  .user-card-options-button {
+    button {
+      @include border-radius(10px);
+      background: none;
+      border: none;
+      color: $blue-gray-400;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba($blue-gray-100, 0.1);
+      }
+
+      &:focus {
+        @include box-shadow(0 0 0 0.2rem rgba($blue-gray-100, 0.25));
+        border-color: $blue-gray-100;
+        outline: none;
+      }
+    }
+  }
+}
