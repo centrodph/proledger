@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import homeImage from '../../assets/images/home-page-image.jpg';
+import homeImage from '../../assets/images/home-page-image-left.jpg';
 import SignInForm from '../form/SignInForm';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
-import { CButton } from '../form/elements';
 
 export class HomePage extends Component {
   /**

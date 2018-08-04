@@ -1210,9 +1210,12 @@ a:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
 
 .component-signin-form {
-  max-width: 400px;
-  min-height: 400px;
-  flex: 1; }
+  width: 400px;
+  min-height: 400px; }
+  @media (max-width: 768px) {
+    .component-signin-form {
+      width: auto;
+      min-width: 300px; } }
   .component-signin-form .form-title {
     font-size: 30px;
     line-height: 1.5;
@@ -1404,6 +1407,7 @@ a:hover {
 
 .home-sign-in-form {
   display: flex;
+  justify-content: flex-end;
   width: 100%; }
   @media (max-width: 768px) {
     .home-sign-in-form {

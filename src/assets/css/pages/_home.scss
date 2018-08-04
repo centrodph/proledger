@@ -54,7 +54,7 @@
 
 .home-sign-in-form {
   display: flex;
-
+  justify-content: flex-end;
   width: 100%;
   @media (max-width: 768px) {
     justify-content: center;

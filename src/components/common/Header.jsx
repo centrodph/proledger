@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { PAGE_TITLE } from '../../utils/Constants';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo-big.png';
 import { CButton } from '../form/elements';
 
-export class Header extends Component {
+class Header extends Component {
   renderHeaderActions = () => (
     <div className="component-header-actions">
       <a href="#" className="component-header-actions__link">
