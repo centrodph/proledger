@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
 body {
   margin: 0;
   padding: 0;
@@ -1043,23 +1044,13 @@ strong {
 .flaticon2-146-sound-waves:before {
   content: "\f191"; }
 
-@font-face {
-  font-family: "butler_stencilbold";
-  src: url(../font/butler_bold_stencil-webfont.woff2) format("woff2"), url(../font/butler_bold_stencil-webfont.woff) format("woff");
-  font-weight: normal;
-  font-style: normal; }
+.playfair-bold, .component-page-homepage .home-title {
+  font-family: "Playfair Display";
+  font-weight: 700; }
 
-@font-face {
-  font-family: "butler_stencillight";
-  src: url(../font/butler_light_stencil-webfont.woff2) format("woff2"), url(../font/butler_light_stencil-webfont.woff) format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-.stencil-bold, .component-page-homepage .home-title {
-  font-family: "butler_stencilbold"; }
-
-.stencil-light {
-  font-family: "butler_stencillight"; }
+.playfair-light {
+  font-family: "Playfair Display";
+  font-weight: 400; }
 
 .roboto, .component-header-actions__link, .component-header-actions__btn, .component-signin-form, .component-signin-form .component-input-row .textfield-input, .component-signin-form .form-actions .forgot-link, .component-signin-form .component-c-button button, .component-page-homepage .btn-request-invite button {
   font-family: "Roboto", sans-serif;
@@ -1134,13 +1125,14 @@ a:hover {
       text-align: center;
       padding: 10px 0; } }
   .component-header #logo {
-    max-height: 26px; }
+    max-height: 35px; }
   .component-header .component-header-actions {
     display: flex;
     flex-direction: row;
     flex: 1;
     justify-content: flex-end;
-    font-size: 12px; }
+    font-size: 12px;
+    padding: 6px 0; }
     @media (max-width: 768px) {
       .component-header .component-header-actions {
         justify-content: center; } }

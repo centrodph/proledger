@@ -7,7 +7,7 @@
     height: auto;
   }
   .home-title {
-    @extend .stencil-bold;
+    @extend .playfair-bold;
     font-size: 50px;
 
     @media (max-width: 1200px) {

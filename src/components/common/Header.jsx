@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { PAGE_TITLE } from '../../utils/Constants';
-import logo from '../../assets/images/logo-big.png';
+import logo from '../../assets/images/logo-hq.png';
 import { CButton } from '../form/elements';
 
 class Header extends Component {

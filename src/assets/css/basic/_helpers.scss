@@ -1,23 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-@font-face {
-  font-family: "butler_stencilbold";
-  src: url(../font/butler_bold_stencil-webfont.woff2) format("woff2"),
-    url(../font/butler_bold_stencil-webfont.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+.playfair-bold {
+  font-family: "Playfair Display";
+  font-weight: 700;
 }
-@font-face {
-  font-family: "butler_stencillight";
-  src: url(../font/butler_light_stencil-webfont.woff2) format("woff2"),
-    url(../font/butler_light_stencil-webfont.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.stencil-bold {
-  font-family: "butler_stencilbold";
-}
-.stencil-light {
-  font-family: "butler_stencillight";
+.playfair-light {
+  font-family: "Playfair Display";
+  font-weight: 400;
 }
 .roboto {
   font-family: "Roboto", sans-serif;
