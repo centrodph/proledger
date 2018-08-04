@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import homeImage from '../../assets/images/home-page-image-left.jpg';
+import homeImage from '../../assets/images/home-page-image-left-no-buildings.jpg';
 import SignInForm from '../form/SignInForm';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
