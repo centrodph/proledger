@@ -8,8 +8,27 @@
   }
   .home-title {
     @extend .stencil-bold;
-    font-size: 56px;
+    font-size: 50px;
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    @media (max-width: 990px) {
+      font-size: 34px;
+    }
+    @media (max-width: 768px) {
+      font-size: 25px;
+      text-align: center;
+      padding: 15px 0;
+    }
   }
+
+  .home-image {
+    img {
+      max-width: 100%;
+    }
+  }
+
   .home-layout {
     display: flex;
     flex: 1;
@@ -35,6 +54,9 @@
 
 .home-sign-in-form {
   display: flex;
-  justify-content: flex-end;
+
   width: 100%;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }

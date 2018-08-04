@@ -25,7 +25,7 @@ export class Header extends Component {
       <div className="component-header">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 logo-contener">
               <img id="logo" src={logo} alt={PAGE_TITLE} title={PAGE_TITLE} />
             </div>
             <div className="col-sm-12 col-md-9">{this.renderHeaderActions()}</div>

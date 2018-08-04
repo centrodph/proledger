@@ -1123,8 +1123,16 @@ a:hover {
   background: #fff;
   position: relative;
   z-index: 1; }
+  @media (max-width: 768px) {
+    .component-header {
+      display: block;
+      padding: 15px 10px; } }
   .component-header h1 {
     margin: 0; }
+  @media (max-width: 768px) {
+    .component-header .logo-contener {
+      text-align: center;
+      padding: 10px 0; } }
   .component-header #logo {
     max-height: 26px; }
   .component-header .component-header-actions {
@@ -1133,6 +1141,9 @@ a:hover {
     flex: 1;
     justify-content: flex-end;
     font-size: 12px; }
+    @media (max-width: 768px) {
+      .component-header .component-header-actions {
+        justify-content: center; } }
 
 .component-header-actions__link {
   display: inline-flex;
@@ -1147,6 +1158,10 @@ a:hover {
   margin-right: 34px; }
   .component-header-actions__link:hover {
     color: #333333; }
+  @media (max-width: 768px) {
+    .component-header-actions__link {
+      display: block;
+      margin: 0 5px; } }
 
 .component-header-actions__btn {
   -moz-border-radius: 20px;
@@ -1342,7 +1357,20 @@ a:hover {
     .component-page-homepage {
       height: auto; } }
   .component-page-homepage .home-title {
-    font-size: 56px; }
+    font-size: 50px; }
+    @media (max-width: 1200px) {
+      .component-page-homepage .home-title {
+        font-size: 40px; } }
+    @media (max-width: 990px) {
+      .component-page-homepage .home-title {
+        font-size: 34px; } }
+    @media (max-width: 768px) {
+      .component-page-homepage .home-title {
+        font-size: 25px;
+        text-align: center;
+        padding: 15px 0; } }
+  .component-page-homepage .home-image img {
+    max-width: 100%; }
   .component-page-homepage .home-layout {
     display: flex;
     flex: 1;
@@ -1376,5 +1404,7 @@ a:hover {
 
 .home-sign-in-form {
   display: flex;
-  justify-content: flex-end;
   width: 100%; }
+  @media (max-width: 768px) {
+    .home-sign-in-form {
+      justify-content: center; } }

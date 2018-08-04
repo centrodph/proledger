@@ -6,8 +6,18 @@
   background: #fff;
   position: relative;
   z-index: 1;
+  @media (max-width: 768px) {
+    display: block;
+    padding: 15px 10px;
+  }
   h1 {
     margin: 0;
+  }
+  .logo-contener {
+    @media (max-width: 768px) {
+      text-align: center;
+      padding: 10px 0;
+    }
   }
   #logo {
     max-height: 26px;
@@ -18,12 +28,20 @@
     flex: 1;
     justify-content: flex-end;
     font-size: 12px;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 }
 
 .component-header-actions__link {
   @include simpleWhiteBtn();
   margin-right: 34px;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin: 0 5px;
+  }
 }
 
 .component-header-actions__btn {
